@@ -1,0 +1,28 @@
+It looks like you've described three different data engineering projects, each with its own objectives and technologies. Here's a brief overview of each project:
+
+1) Live Twitter Sentiment Analysis with Spark:
+
+Objective: Analyze users' sentiments on Twitter in real-time to gain insights for companies focused on social media trends and product influence.
+
+Data Pipeline Stages:
+
+Data Ingestion: Real-time tweets are ingested from Twitter using NiFi GetTwitter processor and sent to a Kafka topic.
+Data Processing: Spark Structured Streaming API is used to process real-time data and analyze sentiment using Spark MLib.
+Data Storage: Processed and aggregated results are stored in MongoDB.
+Data Visualization: Interactive dashboards are created using Python's Plotly and Dash libraries to visualize the results.
+2) Yelp Data Analysis using Azure Databricks:
+
+Objective: Perform ETL (Extract, Transform, Load) on Yelp's dataset to gain business insights. Explore Azure services like Databricks, Data Factory, and Storage.
+
+Project Stages:
+
+Data Ingestion: Data is obtained from Yelp and pushed to Azure Data Lake using DataFactory.
+Data Preparation: Data cleaning and analysis are performed using Azure Databricks.
+Data Visualization: Insights derived from the raw Yelp data are visualized using Databricks.
+3) Realtime Data Analytics with Databricks - Olber Cab Service:
+
+Objective: Calculate the average tip per kilometer driven in real-time for each area to identify passenger trends for a cab service company called Olber.
+
+Data Sources: Cab meter data (trip duration, distance, pick-up/drop-off locations) and mobile application payment data (fares).
+
+These projects involve various stages of data processing, including data ingestion, cleaning, analysis, and visualization. They also utilize different technologies like Apache Spark, Kafka, NiFi, MongoDB, Azure Databricks, Data Factory, and Python libraries for visualization. Each project focuses on specific data sources and objectives, showcasing the versatility of data engineering in real-world scenarios.
